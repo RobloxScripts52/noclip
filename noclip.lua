@@ -7,7 +7,7 @@ end)
 plr = game.Players.LocalPlayer
 mouse = plr:GetMouse()
 mouse.KeyDown:connect(function(key)
-if key == "q" then
+if key == "e" then
 noclip = not noclip
 game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
 end
@@ -17,8 +17,9 @@ Title = "Noclip";
 Text = "Loaded.";
 Duration = "10";
 })
+wait(1)
 game.StarterGui:SetCore("SendNotification", {
 Title = "Noclip";
-Text = "Press Q To Noclip";
+Text = "Press E To Noclip";
 Duration = "10";
 })
